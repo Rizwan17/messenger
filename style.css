@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+*{
+	margin: 0;padding: 0;
+}
+html, body{
+	height: 100%;
+	overflow: hidden;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	color: #666;
+}
+.header{
+	width: 100%;
+	height: 50px;
+	background: #0084ff;
+	box-sizing: border-box;
+	padding: 0 150px;
+	line-height: 50px;
+	display: flex;
+}
+.header .logo a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+
+}
+.header .menu{
+	display: flex;
+	flex: 1;
+	justify-content: flex-end;
+}
+.header .menu a{
+	color: #fff;
+	text-decoration: none;
+}
+.main-wrapper{
+	width: 100%;
+	height: 100%;
+	background: #ddd;
+	position: relative;
+	/*top: -50px;
+	box-sizing: border-box;
+	padding-top: 50px;*/
+}
+.flex-box{
+	display: flex; 
+	background: #ccc;
+	justify-content: flex-start;
+	align-items: stretch;
+	height: 100%;
+}
+.flex-box .box-1{
+	flex: 2;
+	border-right: 1px solid #cecece;
+	background: #fff;
+}
+.flex-box .box-2{
+	flex: 5;
+	background: #fff;
+}
+.messenger{
+	height: 100%;
+}
+.chat-container{
+	height: 100%;
+	background: transparent;
+	position: relative;
+	padding-bottom: 100px;
+	box-sizing: border-box;
+}
+.heading{
+	width: 100%;
+	font-weight: bold;
+	text-align: center;
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+	background: #fff;
+	border-bottom: 1px solid #cecece;
+}
+.users{
+	height: 100%;
+	overflow-x: hidden;
+}
+.users .user{
+	display: flex;
+	background: transparent;
+	height: 50px;
+	padding: 10px;
+	cursor: pointer;
+	transition: all 0.2s linear;
+}
+.users .user:hover{
+	background: #cecece;
+}
+.users .user .user-image{
+	width: 50px;
+	height: 50px;
+	background: #cecece;
+	border-radius: 50px;
+	padding: ;
+}
+.users .user:hover .user-image{
+	background: #fff;
+}
+.users .user .user-details{
+	height: 50px;
+	padding: 10px;
+}
+.user-details span{
+	display: block;
+}
+.messages{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: flex-end;
+
+}
+.chats{
+	display: flex;
+	flex: 1;
+	justify-content: flex-start;
+	overflow-x: hidden;
+}
+.write-message{
+}
+.message-area{
+	height: 50px;
+	bottom: 0;
+	display: flex;
+}
+.message-area .message-input{
+	flex: 10;
+	height: 60px;
+	box-sizing: border-box;
+	padding: 20px 10px;
+	font-family: 'Open Sans';
+	resize: none;
+	border: 0;
+	border-top: 1px solid #cecece;  
+	outline: none;
+}
+.message-area .send-btn{
+	flex: 1;
+	height: 60px;
+	border: 0;
+	background: #0084ff;
+	color: #fff;
+	font-weight: bold;
+	font-size: 16px;
+}
+.message-container{
+	width: 100%;
+}
+.message-block{
+	position: relative;
+	display: flex;
+	margin:5px;
+}
+.message-block .user-icon{
+	width: 30px;
+	height: 30px;
+	background: #cecece;
+	border-radius: 25px;
+	display: inline-block;
+}
+.message-block .message{
+	background: #0084ff;
+	color: #fff;
+	border-radius: 10px;
+	padding:5px;
+	display: inline-block;
+	margin: 10px 5px;
+}
+.received-message{
+	display: flex;
+	flex: 1;
+	justify-content: flex-end;
+}
+.received-message > .user-icon{
+	order: 2;
+}
+
+.received-message > .message{
+	order: 1;
+}
+
+/* Login / Register */
+
+.card{
+	width: 400px;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 1px solid #cecece;
+	border-radius: 5px;
+	background: #fff;
+	text-align: center;
+}
+.card .content{
+	margin: 40px 0;
+	transition: all 5s linear;
+ 	display: none;
+}
+
+.card .content div{
+	padding: 5px 0;
+}
+.card input{
+	width: 250px;
+	height: 35px;
+	border: 0;
+	outline: none;
+	box-shadow: inset 0 0 5px grey;
+	border-radius: 5px;
+	box-sizing: border-box; 
+	padding: 10px;
+	color: #666;
+	font-weight: bold;
+}
+.card.active{
+	box-shadow: 0 0 30px 0px #0084ff;
+}
+.card button{
+	width: 250px;
+	height: 35px;
+	color: #fff;
+	background: #0084ff;
+	font-weight: bold;
+	border: 0;
+	border-radius: 5px; 
+}
+.content.active{
+	display: block;
+}
+.login-register-btn > span{
+	position: absolute;
+	opacity: 0;
+	transition: all 0.5s linear;
+}
+
+.login-register-btn > span.active{
+	opacity: 1;
+}
+/* Login / Register */
+
+#loader{
+	height: 30px;
+}
